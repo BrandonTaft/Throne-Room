@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		<script src="Get-Bathrooms.js"></script>
-	</body>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./Bathroom.css" />
+    <script src="./Get-Bathrooms.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7Izt6D-mHq23GpaMosRng4p71cq3ZQI&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
 </html>
