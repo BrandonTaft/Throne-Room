@@ -1,13 +1,48 @@
 /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-#map {
+* element that contains the map. */
+#heading{
+
+
+}     
+
+/* Contains map and "list" divs*/
+#flex-container{
+  display: flex;
+  flex-wrap:row;
+  height: 75%;
+}
+
+/* This  is a seperate container that only contains the map*/
+#map-container{
+  width: 70%;
+}
+
+/*map-div*/
+#map{ 
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   height: 100%;
 }
 
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
+/* list-div*/
+#list-container{
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  width: 30%;
+  }    
+
+body{
+height: 100%;
+margin: 0;
+padding: 0;
 }
+
+#button-box{
+
+}
+
+#reviews{
+  
+}      
