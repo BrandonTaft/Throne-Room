@@ -1,0 +1,6 @@
+#ignore tmp files
+*.tmp.*
+
+#hide system files
+.DS_Store
+Thumbs.db
