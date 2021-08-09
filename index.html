@@ -1,14 +1,34 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Simple Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="./Bathroom.css" />
     <script src="./Get-Bathrooms.js"></script>
-  </head>
+    <link rel="stylesheet" type="text/css" href="Bathroom.css" />  
+</head>
   <body>
-    <div id="map"></div>
+    <div id = "heading">
+        <h1>THRONE ROOM</h1>
+        <h3><i>For when you've gotta go.</i></h3>
+    </div>
+  
+  
+    <div id = "flex-container">
+        <div id = map-container> 
+            <div id="map"></div>
+        </div> 
+        <div id = "list-container">list goes here</div>
+           
+    </div>
+  
+            <div id = "button-box">
+            <button>By Score</button>
+            <button>By Distance</button>
+            </div>
+
+            <div id = "reviews">Reviews</div>
+
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7Izt6D-mHq23GpaMosRng4p71cq3ZQI&libraries=places"></script>
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7Izt6D-mHq23GpaMosRng4p71cq3ZQI&libraries=places"></script>
-  </body>
+    </body>
 </html>
