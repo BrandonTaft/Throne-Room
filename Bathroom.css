@@ -36,11 +36,13 @@ font: ye_olde_oak;
   justify-content: center;
   margin-top: 50px;
 }
+#infowindow{
+  color: gray;
+}
 
 /* This  is a seperate container that only contains the map*/
 #map-container{
   width: 70%;
-
 }
 
 /*map-div*/

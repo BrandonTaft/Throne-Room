@@ -44,7 +44,7 @@ async function createMarker(place) {
         
 
         //This is teh popup info, edit this to change what info we display on clicking a marker
-        let contentInfo = `<b>${placeinfo.name}</b><br>${placeinfo.formatted_address}<br><a href="https://www.google.com/maps/place/${placeinfo.formatted_address}">Google Maps</a>`
+        let contentInfo = `<div id="infowindow"><b>${placeinfo.name}</b><br>${placeinfo.formatted_address}<br><a href="https://www.google.com/maps/place/${placeinfo.formatted_address}">Google Maps</a></div>`
         
         const infowindow = new google.maps.InfoWindow({
           content: contentInfo
