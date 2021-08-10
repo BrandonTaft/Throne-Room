@@ -12,6 +12,7 @@ function initMap(locationData) {
     const request = {
       query: "restrooms near me",
       location: mapCenter,
+      //todo Switch this to dropdown value
       radius: '25',
       fields: ["name", "geometry", "rating", "place_id"],
     };
@@ -20,6 +21,7 @@ function initMap(locationData) {
       console.log(results)
       if (status === google.maps.places.PlacesServiceStatus.OK && results) {
         for (let i = 0; i < results.length; i++) {
+          //Make our results list in HTML
           //div.innerhtml = results[i]
           createMarker(results[i]);
         }
@@ -42,13 +44,12 @@ async function createMarker(place) {
       }
       
       getPlaceInformation(place.place_id, function(place) {
-        if (place.rating == null){
-          newrating = "not rated"
-        }else {
-          newrating = `rated ${place.rating}`
-        }
+        // Check if the place has a rating, if not change it to a readable format
+        if (place.rating == null){ newrating = "not rated" }else { newrating = `rated ${place.rating}`}
         
         console.log(place)
+
+        //This is teh popup info, edit this to change what info we display on clicking a marker
         let contentInfo = `<h4>${place.name} is ${newrating} you can reach them at ${place.formatted_phone_number}<h4>`
         
         const infowindow = new google.maps.InfoWindow({
@@ -67,6 +68,7 @@ async function createMarker(place) {
 function getPlaceInformation(placeid, completion) {
   var request = {
     placeId: placeid,
+    //We need to edit these field to get info we care about per location
     fields: ['name', 'rating', 'formatted_phone_number', 'geometry', 'review']
   };
   
