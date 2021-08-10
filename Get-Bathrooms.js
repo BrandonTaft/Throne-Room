@@ -1,10 +1,8 @@
-let map;
 let prev_infowindow =false;
 
 
-function initMap(locationData) {
+function drawMap(locationData) {
   const mapCenter = new google.maps.LatLng(locationData.latitude,locationData.longitude)
-  infowindow = new google.maps.InfoWindow()
   map = new google.maps.Map(document.getElementById("map"), {
       center: mapCenter,
       zoom: 12,
@@ -14,15 +12,12 @@ function initMap(locationData) {
       location: mapCenter,
       //todo Switch this to dropdown value
       radius: '25',
-      fields: ["name", "geometry", "rating", "place_id"],
+      fields: ["name", "geometry", "place_id"],
     };
     service = new google.maps.places.PlacesService(map)
     service.textSearch(request, (results, status) => {
-      console.log(results)
       if (status === google.maps.places.PlacesServiceStatus.OK && results) {
         for (let i = 0; i < results.length; i++) {
-          //Make our results list in HTML
-          //div.innerhtml = results[i]
           createMarker(results[i]);
         }
         map.setCenter(results[0].geometry.location)
@@ -43,14 +38,13 @@ async function createMarker(place) {
         prev_infowindow.close()
       }
       
-      getPlaceInformation(place.place_id, function(place) {
+      getPlaceInformation(place.place_id, function(placeinfo) {
         // Check if the place has a rating, if not change it to a readable format
-        if (place.rating == null){ newrating = "not rated" }else { newrating = `rated ${place.rating}`}
+        if (placeinfo.rating == null){ newrating = "not rated" }else { newrating = `rated ${placeinfo.rating}`}
         
-        console.log(place)
 
         //This is teh popup info, edit this to change what info we display on clicking a marker
-        let contentInfo = `<h4>${place.name} is ${newrating} you can reach them at ${place.formatted_phone_number}<h4>`
+        let contentInfo = `<b>${placeinfo.name}</b><br>${placeinfo.formatted_address}<br><a href="https://www.google.com/maps/place/${placeinfo.formatted_address}">Google Maps</a>`
         
         const infowindow = new google.maps.InfoWindow({
           content: contentInfo
@@ -69,12 +63,12 @@ function getPlaceInformation(placeid, completion) {
   var request = {
     placeId: placeid,
     //We need to edit these field to get info we care about per location
-    fields: ['name', 'rating', 'formatted_phone_number', 'geometry', 'review']
+    fields: ['name', 'rating', 'formatted_phone_number', 'geometry', 'formatted_address', 'review']
   };
   
   service = new google.maps.places.PlacesService(map)
-  service.getDetails(request, function(place, status) {
-    completion(place)
+  service.getDetails(request, function(placeinfo, status) {
+    completion(placeinfo)
   })
 }
 
@@ -84,11 +78,10 @@ async function getUserLocation(locationOutput){
     return response.json()
   }).then(result =>{
     locationOutput(result)
-    let map
   })
 }
 
 getUserLocation(async (locationData)=> {
-  await initMap(locationData)
+  drawMap(locationData)
 
 })
