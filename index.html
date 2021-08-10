@@ -4,31 +4,74 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="./Get-Bathrooms.js"></script>
     <link rel="stylesheet" type="text/css" href="Bathroom.css" />  
-</head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  </head>
+  <body style = color:white;background-color:blue>
     <div id = "heading">
-        <h1>THRONE ROOM</h1>
-        <h3><i>For when you've gotta go.</i></h3>
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">THRONE ROOM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
+    <div id = "slogan">
+      <h3 class="area"><i>For when you've gotta go.</i></h3>
+    </div>
+  <div id = "button-box">
+    
+  </div>
   
-  
-    <div id = "flex-container">
-        <div id = map-container> 
+  <div id = "flex-container">
+      
+        
             <div id="map"></div>
         </div> 
-        <div id = "list-container">list goes here</div>
-           
+        
     </div>
   
-            <div id = "button-box">
-            <button>By Score</button>
-            <button>By Distance</button>
-            </div>
+           
 
             <div id = "reviews">Reviews</div>
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7Izt6D-mHq23GpaMosRng4p71cq3ZQI&libraries=places"></script>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>
