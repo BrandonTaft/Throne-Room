@@ -5,12 +5,25 @@ display: flex;
 text-align: center;
 justify-content: center;
 flex-direction: column;
+font: ye_olde_oak;
 }     
 #title{
   padding-right: 
   500;
-  font-variant-ea ;
+
 }
+
+@font-face { font-family: Oak; src: url('/fonts/ye_olde_oak.ttf'); } 
+#navText { 
+  font-family: Oak;
+  font-display: center;
+  color: blue;
+ }
+
+#navBar {
+  
+}
+
 #slogan{
   margin-top: 100px;
 }
@@ -63,12 +76,7 @@ justify-content: center;
 #reviews{
   height: 10%;
 }      
-@import l(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
- background: #111;ur
- font-family: "Open Sans",  Impact;
-}
 
 .area {
   text-align: center;
