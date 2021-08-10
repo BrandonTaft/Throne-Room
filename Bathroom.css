@@ -1,26 +1,52 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 #heading{
-
-
+display: flex;
+text-align: center;
+justify-content: center;
+flex-direction: column;
+font: ye_olde_oak;
 }     
+#title{
+  padding-right: 
+  500;
+
+}
+
+@font-face { font-family: Oak; src: url('/fonts/ye_olde_oak.ttf'); } 
+#navText { 
+  font-family: Oak;
+  font-display: center;
+  color: blue;
+ }
+
+#navBar {
+  
+}
+
+#slogan{
+  margin-top: 100px;
+}
 
 /* Contains map and "list" divs*/
 #flex-container{
   display: flex;
   flex-wrap:row;
   height: 75%;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 /* This  is a seperate container that only contains the map*/
 #map-container{
   width: 70%;
+
 }
 
 /*map-div*/
 #map{ 
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-direction: column;
   height: 100%;
 }
@@ -37,12 +63,50 @@ body{
 height: 100%;
 margin: 0;
 padding: 0;
+color: blue;
 }
 
 #button-box{
+display: flex;
+justify-content: center;
+
 
 }
 
 #reviews{
-  
+  height: 10%;
 }      
+
+
+.area {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
