@@ -5,6 +5,8 @@ We completed:
 - Enabled API to pull in ratings and reviews
 - Imported heading font
 - More CSS
+- Fix javascript function to scrape location information
+- Display location information in infowindow
 
 Block:
 - No current blocks
@@ -13,6 +15,7 @@ Working on:
 - Finalizing images
 - Finalizing CSS
 - Generate review copy
+- Set map to display based on dropdown menus
 
 
 8-10-2021 Tuesday morning SCRUM
