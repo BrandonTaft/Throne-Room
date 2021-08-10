@@ -1,19 +1,3 @@
-8-10-2021 Tuesday morning SCRUM
-
-We completed: 
-- The app pulling users locations automatically
-- Displaying map using JavaScript
-- Displaying bathroom markers
-- Initial HTML
-- Initial CSS
-
-Working on:
-- Allow sorting by rating or distance
--           
-
-Block:
-- No current blocks
-
 8-11-2021 Wednesday morning SCRUM
 
 We completed:
@@ -29,3 +13,19 @@ Working on:
 - Finalizing images
 - Finalizing CSS
 - Generate review copy
+
+
+8-10-2021 Tuesday morning SCRUM
+
+We completed: 
+- The app pulling users locations automatically
+- Displaying map using JavaScript
+- Displaying bathroom markers
+- Initial HTML
+- Initial CSS
+
+Working on:
+- Allow sorting by rating or distance       
+
+Block:
+- No current blocks
