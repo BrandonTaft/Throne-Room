@@ -3,12 +3,37 @@
 #heading {
   display: flex;
   text-align: center;
-  justify-content: center;
-  flex-direction: column;
+   height:150px;
+  flex-direction: row;
   font: ye_olde_oak;
+  background-color:yellow;
+  color: red;
+  justify-content: flex-start;
+  position: relative;
+
 }
+#dropdowns-container{
+  flex: 0 1 auto;
+  margin-left: auto;
+  align-self: center;
+  padding: 10px;
+
+
+}
+  #rating-dropdown{
+  
+  
+
+  }
+  
+
 #title {
-  padding-right: 500;
+  display: flex;
+  flex: 0 1 auto;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+font-size: 90px;
 }
 
 @font-face {
@@ -27,7 +52,7 @@
 }
 
 #slogan {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 #bodyContainer {
@@ -57,7 +82,7 @@
   width: 90%;
   flex-direction: column;
   height: 100%;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 /* list-div*/
