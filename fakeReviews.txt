@@ -1,0 +1,4 @@
+String[] reviews
+    "This bathroom is mad nasty, yo! Pissy and rancid with doo-doo stains everywhere! You're better off popping a squat in the woods, for real."
+
+]
