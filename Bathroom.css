@@ -17,14 +17,9 @@
   margin-left: auto;
   align-self: center;
   padding: 10px;
-
-
 }
-  #rating-dropdown{
-  
-  
 
-  }
+#rating-dropdown{}
   
 
 #title {
@@ -33,13 +28,9 @@
   position: absolute;
   left:50%;
   transform: translateX(-50%);
-font-size: 90px;
+  font-size: 90px;
 }
 
-@font-face {
-  font-family: Oak;
-  src: url("/fonts/ye_olde_oak.ttf");
-}
 #navText {
   font-family: Oak;
   text-align: center;
@@ -81,16 +72,11 @@ font-size: 90px;
   display: flex;
   width: 85%;
   flex-direction: column;
-<<<<<<< HEAD
   height: 80%;
   margin-top: 50px;
   border-style: double;
   border-color: rgb(218, 180, 84);
   border-width: 35px;
-=======
-  height: 100%;
-  margin-top: 10px;
->>>>>>> bdda84428519057ba20e36da465523d03c34f935
 }
 
 /* list-div*/
