@@ -1,6 +1,6 @@
 8-12-2021: Final Commit
 
-- Project Members: Antonio Shaw, Brandon Taft, David Rouleau, Stepfon Sanders
+- Project Members: Antonio Shaw, Brandon Taft, David Rouleau
 - Description: Using this web application, a user can find public restrooms in their vicinity based on geolocation data pulled from Google APIs.
 - Site: https://project1.digitalcraftsportfolio.space/
 
