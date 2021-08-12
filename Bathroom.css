@@ -1,35 +1,39 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
+@media screen and (max-width: 1280px) { 
+  #heading {
+  height: 10%;
+}
+}
  
 @media all and (min-width: 768px) and (max-width: 1024px) { }
  
 @media all and (min-width: 480px) and (max-width: 768px) { }
  
-@media all and (max-width: 480px) { }
+/* @media screen and (max-width: 480px) {
+#title {font-size: 40px;}
+}  */
 
 #heading {
   display: flex;
   text-align: center;
-   height:150px;
+  height: 12%;
+  width: 100%;
   flex-direction: row;
-  font: ye_olde_oak;
   background-color: rgb(218, 180, 84);;
   color: navy;
   justify-content: flex-start;
   position: relative;
-
 }
+
 #dropdowns-container{
   flex: 0 1 auto;
   margin-left: auto;
+  margin-right: 10%;
   align-self: center;
   padding: 10px;
 }
-
-#rating-dropdown{}
-  
 
 #title {
   display: flex;
@@ -37,7 +41,8 @@
   position: absolute;
   left:50%;
   transform: translateX(-50%);
-  font-size: 90px;
+  font-size: clamp(16px, 6vw, 90px);
+  font-family:'Times New Roman';
 }
 
 #navText {
@@ -52,10 +57,11 @@
 
 #slogan {
   margin-top: 50px;
+  font-size: clamp(12px, 2vw, 20px);
 }
 
 #bodyContainer {
-  background-image: url("https://i.pinimg.com/originals/9f/c4/f5/9fc4f5915e50d5fe25d2e46004c78b7a.jpg");
+  background-image: url("Background.jpg");
   }
 
 /* Contains map and "list" divs*/
@@ -84,6 +90,7 @@
   border-style: double;
   border-color: rgb(218, 180, 84);
   border-width: 35px;
+  background-color: black;
 }
 
 #carouselExampleCaptions {
@@ -95,6 +102,14 @@
   border-style: double;
   border-color: rgb(218, 180, 84);
   border-width: 35px;
+  background-color: black;
+ }
+
+.carousel-inner {
+ font-size: xx-large;
+ color:rgb(218, 180, 84);
+ text-align: center;
+ text-indent: 1%;
 }
 
 /* list-div*/
@@ -131,6 +146,10 @@ body {
   display: flex;
   justify-content: center;
   height: 100%;
+  width: 100%;
+}
+
+select {
   width: 100%;
 }
 
