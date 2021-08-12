@@ -3,7 +3,7 @@
 <head>
   <title>Simple Map</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script src="./Get-Bathrooms.js"></script>
+
   <link rel="stylesheet" type="text/css" href="Bathroom.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -18,8 +18,7 @@
     </div>
     <div id = "dropdowns-container">
     <select id="rating-dropdown">
-      <option value="Ratings">Ratings</option>
-      <option value="No Preference">No Preference</option>
+      <option value="No Preference">No Preference to rating</option>
       <option value="5-star">5-Star</option>
       <option value="4-star">4-Star</option>
       <option value="3-star">3-Star</option>
@@ -45,7 +44,7 @@
         
   
            
-
+<div id="reviewsContainer">
             <div id = "reviews">
               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -85,9 +84,11 @@
               </div>
               
             </div>
+          </div>
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7Izt6D-mHq23GpaMosRng4p71cq3ZQI&libraries=places"></script>
+            <script src="./Get-Bathrooms.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7Izt6D-mHq23GpaMosRng4p71cq3ZQI&libraries=places"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>

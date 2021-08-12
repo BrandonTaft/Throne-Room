@@ -1,13 +1,22 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { }
+
 #heading {
   display: flex;
   text-align: center;
    height:150px;
   flex-direction: row;
   font: ye_olde_oak;
-  background-color:yellow;
-  color: red;
+  background-color: rgb(218, 180, 84);;
+  color: navy;
   justify-content: flex-start;
   position: relative;
 
@@ -54,9 +63,9 @@
 #flex-container {
   display: flex;
   flex-wrap: row;
-  height: 75%;
+  height: 70%;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: .5%;
 }
 #infowindow {
   color: gray;
@@ -64,7 +73,7 @@
 
 /* This  is a seperate container that only contains the map*/
 #map-container {
-  width: 70%;
+  width: 75%;
 }
 
 /*map-div*/
@@ -72,8 +81,18 @@
   display: flex;
   width: 85%;
   flex-direction: column;
+  height: 100%;
+  border-style: double;
+  border-color: rgb(218, 180, 84);
+  border-width: 35px;
+}
+
+#carouselExampleCaptions {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
   height: 80%;
-  margin-top: 50px;
+  margin-top: 1%;
   border-style: double;
   border-color: rgb(218, 180, 84);
   border-width: 35px;
@@ -94,14 +113,26 @@ body {
   color: blue;
 }
 
+
+
 #button-box {
   display: flex;
   justify-content: center;
 }
 
+#reviewsContainer {
+  display: flex;
+  height: 15%;
+  flex-wrap: row;
+  justify-content: center;
+  align-content: center;
+}
+
 #reviews {
-  height: 10%;
-  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .area {
