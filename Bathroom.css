@@ -1,19 +1,5 @@
-/* Always set the map height explicitly to define the size of the div
-* element that contains the map. */
 
-@media screen and (max-width: 1280px) { 
-  #heading {
-  height: 10%;
-}
-}
  
-@media all and (min-width: 768px) and (max-width: 1024px) { }
- 
-@media all and (min-width: 480px) and (max-width: 768px) { }
- 
-/* @media screen and (max-width: 480px) {
-#title {font-size: 40px;}
-}  */
 
 #heading {
   display: flex;
@@ -30,9 +16,9 @@
 #dropdowns-container{
   flex: 0 1 auto;
   margin-left: auto;
-  margin-right: 10%;
+  margin-right: 8%;
   align-self: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #title {
@@ -172,4 +158,14 @@ select {
       0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
       0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
   }
+}
+
+
+@media screen and (max-height: 950px) { 
+  #heading {
+  height: 10%;
+ }
+#reviewsContainer {
+  display: none;
+}
 }
