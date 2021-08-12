@@ -89,7 +89,7 @@ async function createMarker(place) {
         if( placeinfo.reviews != null){
             if (placeinfo.reviews[0] != null){
               if (placeinfo.reviews[0].text != ""){
-                carouseldata0.innerHTML = placeinfo.reviews[0].text
+                carouseldata0.innerHTML = `${placeinfo.reviews[0].text}`
               }else {
                 console.log("review is blank, we need a fake review")
                 fakeReviews(carouseldata0)
@@ -101,7 +101,7 @@ async function createMarker(place) {
           
           if (placeinfo.reviews[1] != null){
             if (placeinfo.reviews[1].text != ""){
-              carouseldata1.innerHTML = placeinfo.reviews[1].text
+              carouseldata1.innerHTML = `${placeinfo.reviews[1].text}`
             }else {
               console.log("review is blank, we need a fake review")
               fakeReviews(carouseldata1)
@@ -113,7 +113,7 @@ async function createMarker(place) {
           
           if (placeinfo.reviews[2] != null){
             if (placeinfo.reviews[2].text != ""){
-              carouseldata2.innerHTML = placeinfo.reviews[2].text
+              carouseldata2.innerHTML = `${placeinfo.reviews[2].text}`
             }else {
               console.log("review is blank, we need a fake review")
               fakeReviews(carouseldata2)
@@ -146,10 +146,9 @@ async function createMarker(place) {
   
 function fakeReviews(docelement) {
   // These are our real fake reviews, come on down and read our reviews created entirely in their natural artificial habitat
-  const reviews = ["Terrible, pee all over the seat!","c","b"]
   let random = Math.floor(Math.random() * reviews.length)
   console.log(reviews[random])
-  docelement.innerHTML = reviews[random]
+  docelement.innerHTML = `${reviews[random]}`
 }
 
 function getPlaceInformation(placeid, completion) {
