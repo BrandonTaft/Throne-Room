@@ -2,13 +2,13 @@
 <br />
  <br />
 
-<p align="center">Using this web application, a user can find public restrooms in their vicinity
-                                        based on geolocation data  ratings pulled from Google APIs.
-<br />
+<h3 align="center">Using this web application, a user can find public restrooms <br /> in their vicinity
+                                        based on geolocation data  ratings pulled from Google APIs.</h3>
+<br /> 
 
 <h2>Technologies used</h2>
 <br />
-  
+ <br /> 
 <div align='center'>
  
  <img  width="70" height="70" src="https://github.com/BrandonTaft/BrandonTaft/blob/main/assets/javascript-original.svg" />
@@ -23,10 +23,11 @@
  
  <br />
  <br />
+ <br />
 
  
- _____
-<a align='center' href="https://brandontaft.surge.sh" >Check Out My Portfolio</a>  
+ 
+<h2 align='center'><a align='center' href="https://brandontaft.surge.sh" >Check It Out In My Portfolio</h2>
 
 
  
