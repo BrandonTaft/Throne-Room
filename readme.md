@@ -1,40 +1,40 @@
-8-12-2021: Final Commit
+ <h1 align="center">:crown:&nbsp ThroneRoom &nbsp:crown: </h1>
+<br />
+ <br />
 
-- Project Members: Antonio Shaw, Brandon Taft, David Rouleau
-- Description: Using this web application, a user can find public restrooms in their vicinity based on geolocation data pulled from Google APIs.
-- Site: https://project1.digitalcraftsportfolio.space/
+<p align="center">Using this web application, a user can find public restrooms in their vicinity
+                                        based on geolocation data  ratings pulled from Google APIs.
+<br />
 
-8-11-2021 Wednesday morning SCRUM
+<h2>Technologies used</h2>
+<br />
+  
+<div align='center'>
+ 
+ <img  width="70" height="70" src="https://github.com/BrandonTaft/BrandonTaft/blob/main/assets/javascript-original.svg" />
+ &nbsp;&nbsp;&nbsp;
+  <img  width="70" height="70" src="https://github.com/BrandonTaft/BrandonTaft/blob/main/assets/bootstrap-original.svg" />
+ &nbsp;&nbsp;&nbsp;
+  <img  width="70" height="70" src="https://github.com/BrandonTaft/BrandonTaft/blob/main/assets/html5-original.svg"  />
+ &nbsp;&nbsp;&nbsp;
+  <img  width="70" height="70" src="https://github.com/BrandonTaft/BrandonTaft/blob/main/assets/css3-original.svg" />
+ &nbsp;&nbsp;&nbsp;
+  
+ 
+ <br />
+ <br />
 
-We completed:
-- Added drop down menu with Ranges and Ratings
-- Enabled API to pull in ratings and reviews
-- Imported heading font
-- More CSS
-- Fix javascript function to scrape location information
-- Display location information in infowindow
-
-Block:
-- No current blocks
-
-Working on:
-- Finalizing images
-- Finalizing CSS
-- Generate review copy
-- Set map to display based on dropdown menus
+ 
+ _____
+<a align='center' href="https://brandontaft.surge.sh" >Check Out My Portfolio</a>  
 
 
-8-10-2021 Tuesday morning SCRUM
+ 
+  <br />
 
-We completed: 
-- The app pulling users locations automatically
-- Displaying map using JavaScript
-- Displaying bathroom markers
-- Initial HTML
-- Initial CSS
+ <img  src="https://github.com/BrandonTaft/Portfolio/blob/main/HTML/img/portfolio/throneroom.png" />
+  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
-Working on:
-- Allow sorting by rating or distance       
+ <h2 align="center">Thank You For Stopping By!</h2> 
+<p align='center'>For enquiries or empolyment oppurtunities, please reach out at <a href="mailto:btaftcan@gmail.com">btaftcan@gmail.com</a> or over on <a href="https://www.linkedin.com/in/brandonmtaft">LinkedIn</a>.</p>
 
-Block:
-- No current blocks
